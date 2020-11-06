@@ -4,6 +4,7 @@
   "description": "Fruits and vegatables Node.js API",
   "main": "app.js",
   "scripts": {
+    "start": "nodemon  app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Rufin Hounkpe",
@@ -14,5 +15,8 @@
     "mocha": "^8.2.1",
     "pug": "^3.0.0",
     "supertest": "^6.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
   }
 }
