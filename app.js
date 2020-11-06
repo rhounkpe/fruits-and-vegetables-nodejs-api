@@ -1,12 +1,15 @@
 'use strict';
 
-const express = require('express');
-const app = express();
+var express = require('express'),
+    app = express();
+
+app.set('views', 'views');
+app.set('view engine', 'pug');
 
 app.get('/', function(req, res) {
-    res.send('Hello!!!!');
+    res.render('home', {
+  });
 });
 
 app.listen(8082);
-
 module.exports.getApp = app;
