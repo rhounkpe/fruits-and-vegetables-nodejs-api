@@ -1,3 +1,9 @@
+deployment:
+    dockerhub:
+        branch: master
+        commands:
+            - $FRUITS_AND_VAGETABLES_NODEJS_DOCKER_HUB_TRIGGER
+
 test:
     override:
         - mocha
